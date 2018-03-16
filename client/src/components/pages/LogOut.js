@@ -13,9 +13,9 @@ class LogOut  extends Component {
          
 }
 
-componentDidMount() {
-  API.logout();
-}
+// componentDidMount() {
+//   API.logout();
+// }
 
 render
   render() { 
