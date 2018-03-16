@@ -4,14 +4,8 @@ import API from "../../utils/API";
 
 
 
-class LogOut  extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
-        
-     }
-         
-}
+class LogOut extends Component {
+  
 
 // componentDidMount() {
 //   API.logout();
