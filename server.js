@@ -174,16 +174,17 @@ app.get("/checkLogIn", function(req, res){
 })
 
 app.get('/logout', function(req, res, next) {
-    if (req.session) {
-      // delete session object
-      req.session.destroy(function(err) {
-        if(err) {
-          return next(err);
-        } else {
-        //   return res.redirect('/');
-        }
-      });
-    }
+    // if (req.session) {
+    //   // delete session object
+    //   req.session.destroy(function(err) {
+    //     if(err) {
+    //       return next(err);
+    //     } else {
+    //     //   return res.redirect('/');
+    //     }
+    //   });
+    // }
+    req.session.destroy();
   });
 
 app.get('/userInfo', function(req,res,next){
