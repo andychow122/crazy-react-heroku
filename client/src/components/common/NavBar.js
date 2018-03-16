@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 //import "./index.css"
 import API from "../../utils/API";
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -39,7 +39,7 @@ class NavBar extends Component {
       <a className="nav-link" href="/createmerchant" style={{float: "right"}}>Merchant</a>
       </li>
       <li className="nav-item">
-      <a className="nav-link" href="/logout" style={{float: "right"}}>Sign Out{API.logout()}</a>
+      <button className="nav-link" href="/logout" style={{float: "right"}}>Sign Out{API.logout()}</button>
       </li>
 
       
