@@ -39,7 +39,7 @@ class NavBar extends Component {
       <a className="nav-link" href="/createmerchant" style={{float: "right"}}>Merchant</a>
       </li>
       <li className="nav-item">
-      <button className="nav-link" href="/logout" style={{float: "right"}}>Sign Out{API.logout()}</button>
+      <button className="nav-link" style={{float: "right"}}>Sign Out{API.logout()}</button>
       </li>
 
       

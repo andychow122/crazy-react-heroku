@@ -13,14 +13,12 @@ class LogOut extends Component {
 
 render
   render() { 
-    
     return (
       <div >
        THANKS FOR STOPPING BY!
 
        <a className="nav-link" href="/" style={{float: "right"}}>RESET</a>
       </div>
-
       )
   }
 }
