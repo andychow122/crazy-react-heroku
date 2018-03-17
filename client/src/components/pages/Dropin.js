@@ -48,7 +48,7 @@ class Form extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
        <div className="dropinWrapper">
-       <h1 style={{textAlign: "center"}}>ONEPUNCHCARD</h1>
+       {/* <h1 style={{textAlign: "center"}}>ONEPUNCHCARD</h1> */}
        <Video />
         <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
         <input

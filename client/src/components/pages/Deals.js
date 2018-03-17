@@ -78,7 +78,7 @@ render
                             <span className="fa fa-star"></span>
                             <span className="fa fa-star"></span>
                         </div>
-                        <a href={this.state.query + this.state.address[0]}>
+                        <a href={this.state.query + this.state.address[1]}>
                         <button type="button" onClick={this.handleRedeem} className="btn btn-primary" style={{float: ""}}>REDEEM HERE</button>
                         </a>
                         </div>
@@ -100,7 +100,7 @@ render
                             <span className="fa fa-star"></span>
                             <span className="fa fa-star"></span>
                         </div>
-                        <a href={this.state.query + this.state.address[0]}>
+                        <a href={this.state.query + this.state.address[2]}>
                         <button type="button" onClick={this.handleRedeem} className="btn btn-primary" style={{float: ""}}>REDEEM HERE</button>
                         </a>
                         </div>
@@ -122,7 +122,7 @@ render
                             <span className="fa fa-star"></span>
                             <span className="fa fa-star"></span>
                         </div>
-                        <a href={this.state.query + this.state.address[0]}>
+                        <a href={this.state.query + this.state.address[3]}>
                         <button type="button" onClick={this.handleRedeem} className="btn btn-primary" style={{float: ""}}>REDEEM HERE</button>
                         </a>
                         </div>
@@ -144,7 +144,7 @@ render
                             <span className="fa fa-star"></span>
                             <span className="fa fa-star"></span>
                         </div>
-                        <a href={this.state.query + this.state.address[0]}>
+                        <a href={this.state.query + this.state.address[4]}>
                         <button type="button" onClick={this.handleRedeem} className="btn btn-primary" style={{float: ""}}>REDEEM HERE</button>
                         </a>
                         </div>
@@ -166,7 +166,7 @@ render
                             <span className="fa fa-star"></span>
                             <span className="fa fa-star"></span>
                         </div>
-                        <a href={this.state.query + this.state.address[0]}>
+                        <a href={this.state.query + this.state.address[5]}>
                         <button type="button" onClick={this.handleRedeem} className="btn btn-primary" style={{float: ""}}>REDEEM HERE</button>
                         </a>
                         </div>
@@ -188,7 +188,7 @@ render
                             <span className="fa fa-star"></span>
                             <span className="fa fa-star"></span>
                         </div>
-                        <a href={this.state.query + this.state.address[0]}>
+                        <a href={this.state.query + this.state.address[6]}>
                         <button type="button" onClick={this.handleRedeem} className="btn btn-primary" style={{float: ""}}>REDEEM HERE</button>
                         </a>
                         </div>
