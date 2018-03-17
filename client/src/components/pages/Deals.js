@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import NavBar from "../common/NavBar";
 import API from "../../utils/API";
-import Logo from '../common/Logo';
+// import Logo from '../common/Logo';
 import Video from '../common/Video';
+import Footer from '../common/Footer';
 
 
 
@@ -30,6 +31,7 @@ componentDidMount(){
 
 handleRedeem(){
     console.log("pizza")
+    // API.clearstamps();
 }
 
 render
@@ -194,7 +196,8 @@ render
                 </div>
         </div>
             
-        <Logo/>
+        {/* <Logo/> */}
+        <Footer />
       </div>
       )
   }

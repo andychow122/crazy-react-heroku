@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "../../index.css";
 import API from "../../utils/API.js";
 import { Redirect } from 'react-router-dom'
-import Logo from '../common/Logo';
+// import Logo from '../common/Logo';
+import Footer from '../common/Footer';
 import Video from '../common/Video';
 
 class Form extends Component {
@@ -74,7 +75,8 @@ class Form extends Component {
         </a>
         <br/>
       <p>ONE HUB FOR ALL YOUR STAMPS</p>
-      <Logo />
+      {/* <Logo /> */}
+      <Footer />
       </div>
    
     );

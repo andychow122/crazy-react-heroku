@@ -7,7 +7,7 @@ class Logo extends Component {
     }
     render() { 
         return ( 
-            <div className="logo">
+            <div className="dropinWrapper">
                 {/* <h2 style={{textAlign: "center", color: "black"}}>ONE PUNCH CARD</h2> */}
                 <img src={"http://www.stickpng.com/assets/images/58582c01f034562c582205ff.png"} style={{textAlign: "center", width: "200px", height: "200px"}} alt="" />
             </div>

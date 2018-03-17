@@ -6,7 +6,8 @@ import RedeemButton from "../common/RedeemButton";
 // import axios from "axios";
 import API from "../../utils/API";
 // import { Redirect } from 'react-router-dom'; I WANT TO USE THIS TO REDIRECT IF USER IS NOT LOGGED IN
-import Logo from '../common/Logo';
+// import Logo from '../common/Logo';
+import Footer from '../common/Footer';
 
 
 
@@ -125,7 +126,8 @@ render
            
         </section>
         <MerchantList/>
-        <Logo />
+        {/* <Logo /> */}
+        <Footer />
       </div>
       //only return one element
       )

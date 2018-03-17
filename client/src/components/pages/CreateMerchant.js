@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import NavBar from "../common/NavBar.js";
-import Logo from "../common/Logo.js";
+// // import Logo from "../common/Logo.js";
 import API from "../../utils/API.js";
 
 
@@ -152,7 +152,7 @@ class CreateMerchant extends Component {
         
 
       </div>
-      <Logo/>
+      {/* <Logo/> */}
             </div>
          )
     }
