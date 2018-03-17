@@ -27,5 +27,8 @@ export default {
     },
     updateStamp: function(newArray){
         return axios.post("/updateStamp", newArray)
+    },
+    merchantInfo: function(){
+        return axios.get("/merchantInfo");
     }
 }

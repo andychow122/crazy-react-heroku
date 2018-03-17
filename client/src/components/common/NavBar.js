@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 //import "./index.css"
-import API from "../../utils/API";
+// import API from "../../utils/API";
 
 // const NavBar = () =>
 class NavBar extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../common/NavBar";
 // import MerchantBadge from "../common/MerchantBadge";
-import MapLoader from "../maps/MapLoader";
+// import MapLoader from "../maps/MapLoader";
 import StarBucks from "../common/cards/StarBucks";
 
 

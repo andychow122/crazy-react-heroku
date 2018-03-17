@@ -100,7 +100,7 @@ class UserSignUp extends Component {
                 <p style={{color:"red"}}>{this.state.passwordErr}</p>
                 <p style={{color:"dark blue"}}>{this.state.successMsg}</p>
                 <br/>
-                <button onClick={this.handleFormSubmit} className="btn btn-lg btn-primary btn-block" >Sign Up</button>
+                <button onClick={this.handleFormSubmit} className="btn btn-lg btn-primary btn-block">Sign Up</button>
                 <a className="nav-link" href="/address">
                   <button className="btn btn-lg btn-primary btn-block">Next</button>
                 </a>

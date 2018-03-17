@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import "../../index.css";
 import API from "../../utils/API.js";
 import { Redirect } from 'react-router-dom'
+import Logo from '../common/Logo';
+import Video from '../common/Video';
 
 class Form extends Component {
   // Setting the component's initial state
   state = {
     email: "",
     password: "",
-    loggedIn: false
+    loggedIn: false,
+    error: ""
   };
 
 
@@ -31,7 +34,12 @@ class Form extends Component {
       password:  this.state.password
     };
     API.login(user).then(res => {
+      console.log(res);
+      if (res.data.msg){
+        this.setState({error: res.data.msg})
+      } else {
       this.setState({loggedIn : true})
+      }
     });    
   };
 
@@ -39,6 +47,8 @@ class Form extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
        <div className="dropinWrapper">
+       <h1 style={{textAlign: "center"}}>ONEPUNCHCARD</h1>
+       <Video />
         <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
         <input
           className="form-control"
@@ -56,15 +66,15 @@ class Form extends Component {
           type="text"
           placeholder="Password"
         />
-        {/* <p>Email address or password is incorrect</p> */}
+        <p style={{color:"red"}}>{this.state.error}</p>
         <br></br>
         <button onClick={this.handleFormSubmit} className="btn btn-lg btn-primary btn-block">Sign in{this.state.loggedIn && <Redirect to="/home"/>}</button>
         <a className="nav-link" href="/usersignup">
-          <button className="btn btn-lg btn-primary btn-block" href="/usersignup" type="submit">
-          Sign up</button>
+          <button className="btn btn-lg btn-primary btn-block" href="/usersignup" type="submit">Sign up</button>
         </a>
-        
-
+        <br/>
+      <p>ONE HUB FOR ALL YOUR STAMPS</p>
+      <Logo />
       </div>
    
     );

@@ -94,7 +94,9 @@ app.post("/login", function(req, res){
             if (error || !user) {
               var err = new Error('Wrong email or password.');
               err.status = 401;
-              return next(err);
+              // return next(err);
+              var errorLogin = {msg : "Wrong email or password"};
+              return res.json(errorLogin);
             } else {
             //   req.session.userId = user._id;
                 req.session.user = user;
@@ -171,6 +173,35 @@ app.get("/checkLogIn", function(req, res){
         return res.json({loggedIn: false});
         // return true;
     }
+})
+
+app.get("/merchantInfo", function(req, res){
+    console.log("hitting merchantInfo");
+    db.Merchant.find({}, function(err, merchants){
+      var merchantsName = [];
+      var merchantsAddress = [];
+      var merchantsPhoto = [];
+      var merchantsDeal = [];
+      var merchantInfo = {};
+      console.log(merchants.length);
+      console.log(merchants[0].name);
+        for (var i = 0; i < merchants.length; i++){
+          merchantsName.push(merchants[i].name);
+
+          var addresses = merchants[i].streetaddress + "+" + merchants[i].state + "+" + merchants[i].zipcode;
+
+          merchantsAddress.push(addresses);
+          merchantsPhoto.push(merchants[i].logo)
+          merchantsDeal.push(merchants[i].deal)
+          console.log(i);
+        }
+      console.log(merchantsName)
+      merchantInfo = {merchantsName: merchantsName, merchantsAddress: merchantsAddress, merchantsPhoto: merchantsPhoto, merchantsDeal: merchantsDeal}
+      console.log(merchantInfo);
+      return res.json(merchantInfo)
+      console.log("is res hitting")
+    })
+    
 })
 
 app.get('/logoutUser', function(req, res, next) {

@@ -5,7 +5,8 @@ import MerchantList from "../common/Merchants";
 import RedeemButton from "../common/RedeemButton";
 // import axios from "axios";
 import API from "../../utils/API";
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom'; I WANT TO USE THIS TO REDIRECT IF USER IS NOT LOGGED IN
+import Logo from '../common/Logo';
 
 
 
@@ -101,7 +102,7 @@ render
         </section>
         <section className="button-container">
             {
-              this.state.complete ? null :
+              this.state.complete ? (<p>Please REFRESH your page in order to Redeem your stamps!</p>) :
               (
                 <input
                 className="form-control"
@@ -124,6 +125,7 @@ render
            
         </section>
         <MerchantList/>
+        <Logo />
       </div>
       //only return one element
       )
