@@ -17,7 +17,7 @@ export default {
         return axios.get("/checkLogIn");
     },
     logout: function(){
-        return axios.get("/logout");
+        return axios.get("/logoutUser");
     },
     submitCode: function(code){
         return axios.post("/submitcode", code)

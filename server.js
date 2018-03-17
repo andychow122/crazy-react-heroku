@@ -173,7 +173,7 @@ app.get("/checkLogIn", function(req, res){
     }
 })
 
-app.get('/logout', function(req, res, next) {
+app.get('/logoutUser', function(req, res, next) {
     if (req.session) {
       // delete session object
       req.session.destroy(function(err) {
@@ -181,7 +181,7 @@ app.get('/logout', function(req, res, next) {
           return next(err);
         } else{
 
-          return res.end();
+          return
       }
       });
     }
