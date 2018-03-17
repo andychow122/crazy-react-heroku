@@ -2,19 +2,8 @@ import React, { Component } from "react";
 //import "./index.css"
 import API from "../../utils/API";
 
-
-
-
 // const NavBar = () =>
 class NavBar extends Component {
-
-  // handleLogOut = event => {
-  //   event.preventDefault();
-  //   API.logout().then(res => {
-  //     // {<Redirect to ="/"/>}
-  //   })
-    
-  // };
 
   render() {
     return (
@@ -39,7 +28,7 @@ class NavBar extends Component {
       <a className="nav-link" href="/createmerchant" style={{float: "right"}}>Merchant</a>
       </li>
       <li className="nav-item">
-      <button className="nav-link" style={{float: "right"}}>Sign Out{API.logout()}</button>
+      <a className="nav-link" href="/logout" style={{float: "right"}}>Sign Out</a>
       </li>
 
       
