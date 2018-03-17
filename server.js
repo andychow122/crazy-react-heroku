@@ -181,7 +181,7 @@ app.get('/logout', function(req, res, next) {
           return next(err);
         } else{
 
-          req.end();
+          return res.end();
       }
       });
     }
